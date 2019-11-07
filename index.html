@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fun Games</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <h1 class="titleheader">Welcome To The Best Classic Game Room on a 17 Year Olds Market</h1>
+    <div class="game1">
+            <FORM onSubmit="" NAME="guessquiz">
+              <CENTER>
+                <TABLE BGCOLOR="transparent" height="300" width="350" BORDER="3" CELLPADDING="5">
+                  <TR>
+                    <TD BGCOLOR="transparent">
+                      <FONT class="gametext" ><B>GUESS MY NUMBER (1 to 100)</B></FONT>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD>
+                      <CENTER>
+                        <INPUT TYPE="text" NAME="prompt" class="gametext1" VALUE="Guess A Number Below"><BR>
+                          <INPUT TYPE="text" NAME="guess" placeholder="(1-100)"class="gametext2" VALUE="">
+                            <INPUT class="guessbutton" TYPE="button" VALUE="Guess" onClick='process(guessme)'>
+                            </CENTER>
+                          </TD>
+                        </TR>
+                      </TABLE>
+                    </CENTER>
+            </FORM>
+        </div>
+            <FORM class="gametitles" name="live">Please enter your age:
+              <INPUT placeholder="(august 23,2002)" TYPE="text" NAME="age" class="gamebox1" VALUE="">
+                <BR><BR><BR>
+              <TABLE ALIGN="CENTER" BGCOLOR="transparent" BORDER="4" CELLPADDING="6">
+              <INPUT class="gamebuttonstyle" TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
+        
+                <INPUT class="gamebuttonstyle" TYPE="reset" NAME="resetb" VALUE="Reset Age">
+        
+                  <BR><BR>
+        
+        
+                      <TR><TD class="gameboxtext">You are days old:</TD>
+        
+                        <TD>
+        
+                          <INPUT class="gameboxtext" TYPE="text" NAME="time1" VALUE="" size=8>
+        
+                          </TD>
+        
+                        </TR>
+        
+                        <TR><TD class="gameboxtext">Plus hours old:</TD>
+        
+                          <TD>
+        
+                            <INPUT class="gameboxtext" TYPE="text" NAME="time2" VALUE="" size=8>
+        
+                            </TD>
+        
+                          </TR>
+        
+                          <TR><TD class="gameboxtext">Plus minutes old:</TD>
+        
+                            <TD>
+                              <INPUT class="gameboxtext" TYPE="text" NAME="time3" VALUE="" size=8></TD>
+        
+                            </TR>
+                    </TABLE>
+        </FORM>
+        <br><br><br><br><br><br>
+        
+</body>
+</html>

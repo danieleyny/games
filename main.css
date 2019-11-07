@@ -1,0 +1,133 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/df/a6/c0/dfa6c0262ea159470db1ca4767f41aa7.jpg);
+  text-align: center;
+  }
+.titleheader {
+  background: -webkit-linear-gradient(red, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Calligraffitti', cursive;
+}
+
+.gametitles{
+    color: lightblue;
+    font-size: 19px;
+  
+  }
+  .gametext {
+    font-size: 20px;
+    font-family:sans-serif;
+    color: lightblue;
+    margin-left: 15px;
+    cursor: default;
+  }
+  .gametext1 {
+    font-size: 20px;
+    font-family:georgia;
+    color: lightblue;
+    height: 50px;
+    width: 250px;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 15px;
+    color: lightblue;
+    border-color: white;
+    cursor: default;
+  }
+  .gametext2 {
+    font-family:sans-serif;
+    color: gold;
+    height: 50;
+    width: 65;
+    margin-top: 4px;
+    background-color: transparent;
+    font-size: 17px;
+    text-align: center;
+    font-family: georgia;
+    border-radius: 40%;
+  
+  }
+  .guessbutton {
+    border-radius: 50%;
+    height: 58px;
+    width: 58px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 35px;
+    background-color: transparent;
+    color: lightblue;
+    border-top-color: yellow;
+    border-left-color: yellow;
+    border-right-color: lightblue;
+    border-bottom-color: lightblue;
+  }
+  .guessbutton:hover {
+    color: yellow;
+    border-top-color: lightblue;
+    border-left-color: lightblue;
+    border-right-color: yellow;
+    border-bottom-color: yellow;
+    cursor: crosshair;
+  }
+  .game1 {
+    float: left;
+    margin-left: 10%;
+  }
+  .gamebox1 {
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    background-color: transparent;
+    color: rgb(84, 194, 102);
+    border-bottom: .7px solid lightblue;
+    border-top: .7px solid lightblue;
+    border-left: .4px solid lightblue;
+    border-right: .4px solid lightblue;
+
+  }
+  
+  .gameboxtext {
+    background-color: transparent;
+    color: lightblue;
+    font-family: georgia;
+    font-size: 14px;
+    cursor: default;
+}
+  .gamebuttonstyle {
+    border-radius: 25%;
+    background-color: transparent;
+    color: lightblue;
+    margin-left: 25px;
+    border-top-color: pink;
+    border-left-color: lightblue;
+    border-right-color: lightblue;
+    border-bottom-color: lightblue;
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .gamebuttonstyle:hover {
+    color: pink;
+    border-top-color: lightblue;
+    border-left-color: lightblue;
+    border-right-color: lightblue;
+    border-bottom-color: pink;
+    cursor: crosshair;
+  }
+  .hrgame {
+    width: 90%;
+    color: white;
+    border: dashed;
+  
+  }
+  form
+  {
+    margin-top:40px;
+    transition: all 4s ease-in-out;
+  }
+  
+  
+
+  
