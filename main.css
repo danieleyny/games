@@ -1,9 +1,10 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/df/a6/c0/dfa6c0262ea159470db1ca4767f41aa7.jpg);
+    background-image: url(https://www.freegreatpicture.com/files/146/13795-colorful-background-of-high-definition.jpg);
   text-align: center;
+  height: 100%;
   }
 .titleheader {
-  background: -webkit-linear-gradient(red, white);
+  background: -webkit-linear-gradient(lightblue, rgb(236, 7, 7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     text-align: center;
@@ -130,4 +131,193 @@ body {
   
   
 
+  /* Variabes */  
+orange: #ffa600;
+green: #c1d72e;
+blue: #82d2e5;
+grey:#f3f3f3;
+white: #fff;
+base-color:green ;
+
+/* Mixin's */ 
+
+@mixin transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin clear {
+  &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+ @mixin box-size {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ @mixin transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin fade {
+  -moz-transition: all 1s ease-in;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+}
+
+@mixin opacity {
+  opacity:0.4;
+  filter:alpha(opacity=40); 
+  @include fade;
+}
+
+@mixin corners ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius; 
+  -khtml-border-radius: $radius; 
+}
+
+
+.wrappper{
+  @include clear;
+  width:100%;
+  margin:0 auto;
+}
+
+
+canvas1{
+  color:$white;
+  border: $white dashed 2px;
+  padding:15px;
+}
+
+ h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+   margin:5px 0;
+   color:red;
+}
+
+
+
+h2 {
+  font-size: 1.6em;
+  color: red;
+}
+
+p1{
+  font-size: 1.6em;
+  color:red;
+}
+
+#alphabet {
+  @include clear;
+  margin:15px auto;
+  padding:0;
+  max-width:900px;
+  color:red;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:35px;
+  height:30px;
+  padding-top:10px;
+  background:$white;
+  color:$base-color;
+  cursor:pointer;
+  @include corners(5px);
+  border: solid 1px white;
   
+    
+    &:hover{
+      background:$base-color;
+      border: solid 1px $white;
+      color:$white;
+    }
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+
+.active {
+  @include opacity;
+  cursor:default;
+    
+  &:hover{
+      @include fade;
+      @include opacity;
+    }
+}
+
+#mylives{
+  font-size:1.6em;
+  text-align:center;
+  display:block;
+}
+
+button{
+  @include corners (5px);
+  background:$base-color;
+  color:$white;
+  border: solid 1px $white;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1.2em;
+  padding:18px 10px;
+  width:180px;
+  margin: 10px;
+  outline: none;
+  
+    &:hover{
+      @include transition;
+      background:$white;
+      border: solid 1px $white;
+      color:$base-color;
+    }
+}
+
+@media (max-width: 767px) {
+  #alphabet {
+  padding:0 0 0 15px;
+}
+  }
+
+  @media (max-width: 480px) {
+  #alphabet {
+  padding:0 0 0 25px;
+}
+  }
+  .hangmantext {
+    color:white;
+    font-size: 17px;
+  }
+  .hangmantitles {
+    color: rgb(209, 131, 131);
+    font-size: 24px;
+  }
